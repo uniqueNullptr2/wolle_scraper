@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Wolle</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Hersteller</th>
+                <th>Produkt</th>
+                <th>Preis</th>
+                <th>Lieferzeit</th>
+                <th>Nadelstärke</th>
+                <th>Zusammenstellung</th>
+            </tr>
+            {% for wolle in wolle_collection%}
+                <tr>
+                    <td>{{wolle.hersteller}}</td>
+                    <td>{{wolle.produkt}}</td>
+                    <td>{{wolle.preis}}</td>
+                    <td>{{wolle.lieferzeit}}</td>
+                    <td>{{wolle.nadelstaerke}}</td>
+                    <td>{{wolle.zusammenstellung}}</td>
+                </tr>
+            {% endfor%}
+        </table>
+    </body>
+</html>
